@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
     text-align: center;
 }
@@ -13,6 +17,11 @@ header {
     display: flex;
     flex-direction: column;
     border: none;
+    margin-top: 10px;
+}
+
+.contact {
+    border-bottom: 3px solid black;
 }
 
 legend {
@@ -38,4 +47,23 @@ input, textarea, #state {
 input::placeholder {
     text-align: right;
     font-style: italic;
+}
+
+.btn {
+    padding: 5%;
+    background-color: teal;
+    color: white;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+form {
+    border-top: 6px double black;
 }
