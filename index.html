@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>The Code Review</h1>
+        <h1 class="header">The Code Review</h1>
     </header>
-    <h2>Signup for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+    <h2 class="header">Signup for our newsletter</h2>
+    <p class="header">Get the latest news on how your code is doing right in your inbox</p>
 <form>
-    <fieldset>
+    <fieldset class="field contact">
         <legend>Contact Information</legend>
-        <label for="user-name">Full Name</label>
-        <input type="text" id="name" name="user-name">
-        <label for="user-email">Email Address</label>
-        <input type="text" id="email" name="user-email">
-        <label for="user-phone">Phone Number</label>
-        <input type="text" id="phone" name="user-phone">
-        <label for="user-address">Street Address</label>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user-name" placeholder="Required">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="user-email" placeholder="Required">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="user-phone">
+        <label for="address">Street Address</label>
         <input type="text" id="address" name="user-address">
-        <label for="user-city">City</label>
+        <label for="city">City</label>
         <input type="text" id="city" name="user-city">
-        <label for="user-state">State</label>
+        <label for="state">State</label>
         <select id="state" name="user-state">
-            <option>Choose State</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
             <option value="Arizona">Arizona</option>
@@ -79,8 +78,26 @@
             <option value="West Virginia">West Virginia</option>
             <option value="Wisconsin">Wisconsin</option>
             <option value="Wyoming">Wyoming</option>
-
-            
+        </select>
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="user-zip">
+    </fieldset>
+    <fieldset class="field news">
+        <legend>Newsletter</legend>
+        <p>Select the newsletters you would like to receive</p>
+        <input type="checkbox" id="html" name="news-box">
+        <label for="html">HTML News</label><br>
+        <input type="checkbox" id="css" name="news-box">
+        <label for="css">CSS News</label><br>
+        <input type="checkbox" id="java" name="news-box">
+        <label for="java">Javascript News</label><br>
+        <p>Newsletter format</p>
+        <input type="radio" id="html-radio" name="nl-radio">
+        <label for="html-radio">HTML</label><br>
+        <input type="radio" id="text-radio" name="nl-radio">
+        <label for="text-radio">Plain text</label><br>
+        <label for=txt-area>Other topics you'd like to hear about</label>
+        <textarea id="txt-area"></textarea>
     </fieldset>
 </form>
 
