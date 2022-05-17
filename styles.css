@@ -2,68 +2,57 @@
     box-sizing: border-box;
 }
 
-.header {
+header{
+    background-color: darkslateblue;
     text-align: center;
-}
-
-header {
-    background-color: rgba(20, 17, 61, 0.616);
-    text-transform: uppercase;
-    width: 100%;
+    padding: 10px;
     color: white;
+    text-transform: uppercase;
 }
 
-.field, header {
-    display: flex;
-    flex-direction: column;
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.form_head {
+    text-align: center;
+    border-bottom: 6px black solid;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: block;
+    border-top: 3px black solid;
+}
+
+fieldset {
     border: none;
-    margin-top: 10px;
 }
 
-.contact {
-    border-bottom: 3px solid black;
+.contact_item,
+.news_item,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+#states,
+.news_label {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
 legend {
+    padding-top: 10px;
     font-weight: bold;
-    font-size: 1.25em;
-    margin-bottom: 10px;
-}
-
-input, textarea, #state {
-    background-color: lightgray;
-    border: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: .5em;
-}
-
-.news {
-    display: block;
-}
-
-
-input::placeholder {
-    text-align: right;
-    font-style: italic;
-}
-
-.btn {
-    padding: 5%;
-    background-color: teal;
-    color: white;
-    width: 100%;
     font-size: 1.5em;
 }
 
-footer {
-    text-align: center;
-    color: gray;
+::placeholder {
+    text-align: right;
     font-style: italic;
-    margin-top: 10px;
-}
-
-form {
-    border-top: 6px double black;
 }
