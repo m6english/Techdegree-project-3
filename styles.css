@@ -25,11 +25,14 @@ main {
     text-align: center;
     border-bottom: 6px black solid;
     margin-bottom: 5px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .container {
     display: block;
     border-top: 3px black solid;
+    padding-top: 15px;
 }
 
 fieldset {
@@ -41,7 +44,7 @@ fieldset {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-#states,
+#state,
 .news_label {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -49,7 +52,7 @@ input[type="tel"],
 }
 
 input,
-#states {
+#state {
     background-color: rgb(211, 211, 211);
     border: none;
     padding: 15px;
@@ -57,7 +60,7 @@ input,
 }
 
 input:focus,
-#states:focus,
+#state:focus,
 #textarea:focus,
 .btn:focus {
     border: darkslateblue 4px solid;
@@ -66,6 +69,7 @@ input:focus,
 
 legend {
     padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
     font-size: 1.4em;
 }
@@ -100,8 +104,12 @@ footer {
     font-style: italic;
     margin: 5px;
     color: slategray;
+    margin-top: 10px;
 }
 
+#zip {
+    width: 50%;
+}
 @media screen and (min-width: 768px) {
 
     main {
@@ -109,7 +117,7 @@ footer {
     }
 
     #zip {
-        width: 35%;
+        width: 25%;
     }
 
     .contact_item {
@@ -128,6 +136,5 @@ footer {
     #contact {
         width: 100%;
     }
-
 
 }
